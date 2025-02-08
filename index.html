@@ -50,11 +50,11 @@
             </div>
             <div class="flex space-x-2">
                 <div id="box-theme"
-                    class="flex items-center w-[40px] h-[40px] justify-center p-2 rounded-lg bg-[#FFA5D3]">
+                    class="flex items-center w-[40px] h-[40px] justify-center p-2 rounded-lg bg-[#FFA5D3] hover:bg-[#E77DB3] duration-300 ease cursor-pointer">
                     <img src="./assets/imgs/lua-white.svg" alt="" class="w-[1rem]">
                 </div>
                 <div id="menu-bar"
-                    class="cursor-pointer border-2 border-zinc-400 w-[40px] rounded-lg flex flex-col items-center justify-center hover:bg-[#98ACB7] duration-300 ease">
+                    class=" md:hidden cursor-pointer border-2 border-zinc-400 w-[40px] rounded-lg flex flex-col items-center justify-center hover:bg-[#98ACB7] duration-300 ease">
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
@@ -83,7 +83,10 @@
                     </div>
                 </div>
                 <div id="Im-box" class="mt-[30px] flex flex-col items-center sobe-animado">
-                    <h2 class="self-start font-bold text-lg">Quem sou eu?</h2>
+                    <div class="flex w-full relative">
+                        <h2 class="self-start font-bold text-lg">Quem sou eu?</h2>
+                        <div class="absolute w-[123px] h-[4px] bottom-[-2px] rounded-lg left-0 bg-[#586A74]"></div>
+                    </div>
                     <div class="mt-[20px] flex flex-col space-y-2  text-sm font-light">
                         <p>Olá, Sou um desenvolvedor web apaixonado por criar experiências digitais interativas e
                             funcionais.
@@ -98,8 +101,11 @@
                         class=" mt-[30px] bg-[#586A74] block px-8 py-3 text-sm text-white rounded-lg shadow-lg hover:bg-[#394C57] duration-300 ease">Meu
                         portfólio -></button>
                 </div>
-                <div id="experiencias" class="my-[30px] sobe-animado">
-                    <h2 class="font-bold text-lg mb-[16px]">Experiências e Formação</h2>
+                <!-- <div id="experiencias" class="my-[30px] sobe-animado">
+                    <div class="flex w-full relative mb-[1rem]">
+                        <h2 class="self-start font-bold text-lg">Bio</h2>
+                        <div class="absolute w-[20px] h-[4px] bottom-[-2px] rounded-lg left-0 bg-[#586A74]"></div>
+                    </div>
                     <div class="flex flex-col  space-y-[12px]">
                         <div class="flex gap-[8px]">
                             <p class="font-black">2023</p>
@@ -119,6 +125,31 @@
                             <p>Técnico em Informática - ETEC</p>
                         </div>
                     </div>
+                </div> -->
+                <div id="for-you" class="sobe-animado">
+                    <div class="flex w-full relative mt-[30px] ">
+                        <h2 class="self-start font-bold">O Que Posso Fazer Por Você?</h2>
+                        <div class="absolute w-[228px] h-[4px] bottom-[-2px] rounded-lg left-0 bg-[#586A74]"></div>
+                    </div>
+                    <div class="mt-[20px] flex flex-col space-y-4 text-sm">
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-square-check text-2xl text-green-600"></i>
+                            <p>Criação de sites responsivos</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-square-check text-2xl text-green-600"></i>
+                            <p>Desenvolvimento de sistemas</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-square-check text-2xl text-green-600"></i>
+                            <p>Otimização de performance e SEO</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-square-check text-2xl text-green-600"></i>
+                            <p>Consultoria e Suporte Técnico</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
