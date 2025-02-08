@@ -4,6 +4,7 @@
 
 const menuBar = document.getElementById("menu-bar");
 const menuBox = document.getElementById("menu-box");
+const box = document.getElementById('box');
 
 menuBar.addEventListener("click", () => {
     if (menuBox.classList.contains("overflow-hidden")) {
@@ -13,4 +14,11 @@ menuBar.addEventListener("click", () => {
         menuBox.classList.remove("w-[200px]");
         menuBox.classList.add("w-0", "overflow-hidden");
     }
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // box.classList.remove("hidden");
+    box.classList.remove("opacity-0", "top-[600px]");
+    // box.classList.add('show');
 });

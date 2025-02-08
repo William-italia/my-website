@@ -14,7 +14,9 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
+
     <script>
         tailwind.config = {
             darkMode: 'class', // habilitando classe dark
@@ -39,7 +41,7 @@
     <nav id="navbar" class="fixed w-full bg-white/50 backdrop-blur-xs z-10">
         <div class="flex items-center justify-between px-[1rem] py-2 md:w-[800px] mx-auto">
             <div class="flex items-center gap-[2rem]">
-                <h2 id="logo" class="text-xl font-bold cursor-pointer">William Italia</h2>
+                <h2 id="logo" class="text-xl font-bold cursor-pointer ">William Italia</h2>
                 <ul class="flex flex-row space-x-4 hidden md:flex">
                     <li class="cursor-pointer">Works</li>
                     <li class="cursor-pointer">Posts</li>
@@ -59,41 +61,67 @@
         </div>
     </nav>
 
-    <main class="relative pt-[56px] mx-[1rem] md:w-full">
+    <main class="relative pt-[56px] mx-[1rem]">
         <div id="menu-box"
-            class="fixed top-16 right-4 w-0 h-auto overflow-hidden  bg-white rounded-lg z-10 transition-all duration-300 ease-in-out">
+            class="fixed top-16 right-4 w-0 h-auto overflow-hidden  bg-white rounded-lg z-10 transition-all duration-300 ease-in-out overflow-hidden">
             <ul class="flex flex-col space-y-2">
                 <li class="hover:bg-[#98ACB7] hover:underline cursor-pointer px-2 py-2 rounded-t-lg">Works</li>
                 <li class="hover:bg-[#98ACB7] hover:underline cursor-pointer px-2 py-2">Posts</li>
                 <li class="hover:bg-[#98ACB7] hover:underline cursor-pointer px-2 py-2 rounded-b-lg">Source</li>
             </ul>
         </div>
-        <div class="container my-[30px] md:w-[500px] mx-auto flex flex-col items-center">
-            <div>
-                <div class="bg-[#586A74] text-center font-light text-[#fff] rounded-lg p-4 shadow-lg">
-                    <p>Olá, sou um desenvolvedor independente do Brasil!</p>
+        <div class="md:w-[500px] mx-auto relative">
+            <div id="box" class="absolute md:mx-[30px] flex flex-col ">
+                <div id="avatar-box" class="">
+                    <div class="bg-[#586A74] text-center rounded-lg p-4 shadow-lg mt-[1rem] sobe-animado">
+                        <p class="font-light text-[#fff] text-xs ">Olá, sou um desenvolvedor independente do Brasil!</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center mt-[30px] sobe-animado">
+                        <img src="./assets/imgs/perfil.jpg" alt="" class="w-1/3 rounded-[100%]">
+                        <h2 class="mt-[20px] text-xl font-bold">William Italia Nogueira</h2>
+                        <p class="mt-[8px] text-sm">Front-End Developer & Future Full-Stack</p>
+                    </div>
                 </div>
-                <div class="flex flex-col items-center justify-center mt-[30px]">
-                    <img src="./assets/imgs/perfil.jpg" alt="" class="w-1/3 rounded-[100%]">
-                    <h2 class="mt-[20px] text-2xl font-bold">William Italia Nogueira</h2>
-                    <p class="mt-[8px] text-xl">Front-End Developer & Future Full-Stack</p>
+                <div id="Im-box" class="mt-[30px] flex flex-col items-center sobe-animado">
+                    <h2 class="self-start font-bold text-lg">Quem sou eu?</h2>
+                    <div class="mt-[20px] flex flex-col space-y-2  text-sm font-light">
+                        <p>Olá, Sou um desenvolvedor web apaixonado por criar experiências digitais interativas e
+                            funcionais.
+                        </p>
+                        <p>Atualmente, desenvolvo projetos próprios e ofereço soluções para empresas e empreendedores
+                            que
+                            precisam
+                            de uma presença digital profissional. </p>
+                        <p>Busco sempre inovar e entregar produtos de qualidade, combinando design e performance.</p>
+                    </div>
+                    <button
+                        class=" mt-[30px] bg-[#586A74] block px-8 py-3 text-sm text-white rounded-lg shadow-lg hover:bg-[#394C57] duration-300 ease">Meu
+                        portfólio -></button>
+                </div>
+                <div id="experiencias" class="my-[30px] sobe-animado">
+                    <h2 class="font-bold text-lg mb-[16px]">Experiências e Formação</h2>
+                    <div class="flex flex-col  space-y-[12px]">
+                        <div class="flex gap-[8px]">
+                            <p class="font-black">2023</p>
+                            <p class="text-sm"><span class="font-bold text-base">Até o presente </span>- Desenvolvimento
+                                de projetos próprios e
+                                estudos avançados em
+                                desenvolvimento web</p>
+                        </div>
+                        <div class="flex gap-[8px]">
+                            <p class="font-black">2024</p>
+                            <p class="text-sm"><span class="font-bold text-base">Até o presente </span> - Trabalhos
+                                freelancer e colaborações com
+                                empresas</p>
+                        </div>
+                        <div class="flex items-center gap-[8px]">
+                            <p class="text-sm font-black">2024</p>
+                            <p>Técnico em Informática - ETEC</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div id="Im" class="mt-[30px]">
-                <h2 class="font-bold text-xl">Quem sou eu?</h2>
-                <div class="mt-[20px] flex flex-col space-y-2 text-lg font-light">
-                    <p>Sou um desenvolvedor web apaixonado por criar experiências digitais interativas e funcionais.
-                    </p>
-                    <p>Atualmente, desenvolvo projetos próprios e ofere- ço soluções para empresas e empreendedores que
-                        precisam
-                        de uma presença digital profissional. </p>
-                    <p>Busco sempre inovar e entregar produtos de qualidade, combinando design e performance.</p>
-                </div>
-            </div>
-            <button
-                class="mt-[30px] bg-[#586A74] block px-8 py-3 text-white rounded-lg shadow-lg hover:bg-[#394C57] duration-300 ease">Meu
-                portfólio
-                -></button>
+
         </div>
     </main>
 
