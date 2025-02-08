@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Italia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class', // habilitando classe dark
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ["Inter", "serif"],
+                    },
+                    colors: {
+                    },
+                    backdropBlur: {
+                        xs: '2px',
+                    }
+                },
+            }
+        }
+    </script>
+</head>
+
+<body class="relative font-sans bg-[#F0E7DB]">
+
+    <nav id="navbar" class="fixed w-full bg-white/50 backdrop-blur-xs z-10">
+        <div class="flex items-center justify-between px-[1rem] py-2 md:w-[800px] mx-auto">
+            <div class="flex items-center gap-[2rem]">
+                <h2 id="logo" class="text-xl font-bold cursor-pointer">William Italia</h2>
+                <ul class="flex flex-row space-x-4 hidden md:flex">
+                    <li class="cursor-pointer">Works</li>
+                    <li class="cursor-pointer">Posts</li>
+                    <li class="cursor-pointer">Source</li>
+                </ul>
+            </div>
+            <div class="flex space-x-2">
+                <div id="box-theme"
+                    class="flex items-center w-[40px] h-[40px] justify-center p-2 rounded-lg bg-[#FFA5D3]">
+                    <img src="./assets/imgs/lua-white.svg" alt="" class="w-[30px]">
+                </div>
+                <div id="menu-bar"
+                    class="cursor-pointer border-2 border-zinc-400 w-[40px] rounded-lg flex flex-col items-center justify-center hover:bg-[#98ACB7] duration-300 ease">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="relative pt-[56px] mx-[1rem] md:w-full">
+        <div id="menu-box"
+            class="fixed top-16 right-4 w-0 h-0 overflow-hidden bg-white rounded-lg z-10 transition-all duration-300 ease-in-out">
+            <ul class="flex flex-col space-y-2">
+                <li class="hover:bg-[#98ACB7] hover:underline cursor-pointer px-2 py-2 rounded-t-lg">Works</li>
+                <li class="hover:bg-[#98ACB7] hover:underline cursor-pointer px-2 py-2">Posts</li>
+                <li class="hover:bg-[#98ACB7] hover:underline cursor-pointer px-2 py-2 rounded-b-lg">Source</li>
+            </ul>
+        </div>
+        <div class="container my-[30px] md:w-[500px] mx-auto flex flex-col items-center">
+            <div>
+                <div class="bg-[#586A74] text-center font-light text-[#fff] rounded-lg p-4 shadow-lg">
+                    <p>Olá, sou um desenvolvedor independente do Brasil!</p>
+                </div>
+                <div class="flex flex-col items-center justify-center mt-[30px]">
+                    <img src="./assets/imgs/perfil.jpg" alt="" class="w-1/3 rounded-[100%]">
+                    <h2 class="mt-[20px] text-2xl font-bold">William Italia Nogueira</h2>
+                    <p class="mt-[8px] text-xl">Front-End Developer & Future Full-Stack</p>
+                </div>
+            </div>
+            <div id="Im" class="mt-[30px]">
+                <h2 class="font-bold text-xl">Quem sou eu?</h2>
+                <div class="mt-[20px] flex flex-col space-y-2 text-lg font-light">
+                    <p>Sou um desenvolvedor web apaixonado por criar experiências digitais interativas e funcionais.
+                    </p>
+                    <p>Atualmente, desenvolvo projetos próprios e ofere- ço soluções para empresas e empreendedores que
+                        precisam
+                        de uma presença digital profissional. </p>
+                    <p>Busco sempre inovar e entregar produtos de qualidade, combinando design e performance.</p>
+                </div>
+            </div>
+            <button
+                class="mt-[30px] bg-[#586A74] block px-8 py-3 text-white rounded-lg shadow-lg hover:bg-[#394C57] duration-300 ease">Meu
+                portfólio
+                -></button>
+        </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
