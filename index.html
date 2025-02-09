@@ -27,6 +27,7 @@
                     },
                     colors: {
                         color: "#202023",
+                        color1: "#2D3748",
                     },
                     backdropBlur: {
                         xs: '2px',
@@ -39,11 +40,11 @@
 
 <body class="relative font-sans bg-[#F0E7DB]">
 
-    <nav id="navbar" class="fixed w-full bg-white/50 backdrop-blur-xs z-10">
+    <nav id="navbar" class="fixed w-full bg-white/50 dark:bg-color dark:bg-color1/50 backdrop-blur-xs z-10 ">
         <div class="flex items-center justify-between px-[1rem] py-2 md:w-[800px] mx-auto">
             <div class="flex items-center gap-[2rem]">
-                <h2 id="logo" class="text-xl font-bold cursor-pointer ">William Italia</h2>
-                <ul class="flex flex-row space-x-4 hidden md:flex">
+                <h2 id="logo" class="text-xl font-bold cursor-pointer dark:text-white">William Italia</h2>
+                <ul class="flex flex-row space-x-4 hidden md:flex dark:text-white">
                     <li class="cursor-pointer">Works</li>
                     <li class="cursor-pointer">Posts</li>
                     <li class="cursor-pointer">Source</li>
@@ -56,15 +57,15 @@
                 </div>
                 <div id="menu-bar"
                     class=" md:hidden cursor-pointer border-2 border-zinc-400 w-[40px] rounded-lg flex flex-col items-center justify-center hover:bg-[#98ACB7] duration-300 ease">
-                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-bars dark:text-white"></i>
                 </div>
             </div>
         </div>
     </nav>
 
-    <main class="relative pt-[56px] mx-[1rem]">
+    <main class="relative pt-[56px] mx-[1rem] dark:text-white">
         <div id="menu-box"
-            class="fixed top-16 right-4 w-0 h-auto overflow-hidden  bg-white rounded-lg z-10 transition-all duration-300 ease-in-out overflow-hidden">
+            class="fixed top-16 right-4 w-0 h-auto overflow-hidden  bg-white dark:bg-[#2D3748] dark:text-white rounded-lg z-10 transition-all duration-300 ease-in-out overflow-hidden">
             <ul class="flex flex-col space-y-2">
                 <li class="hover:bg-[#98ACB7] hover:underline cursor-pointer px-2 py-2 rounded-t-lg">Works</li>
                 <li class="hover:bg-[#98ACB7] hover:underline cursor-pointer px-2 py-2">Posts</li>
@@ -74,7 +75,7 @@
         <div class="md:w-[500px] mx-auto relative">
             <div id="box" class="absolute md:mx-[30px] flex flex-col ">
                 <div id="avatar-box" class="">
-                    <div class="bg-color text-center rounded-lg p-4 shadow-lg mt-[1rem] sobe-animado">
+                    <div class="bg-color dark:bg-color1 text-center rounded-lg p-4 shadow-lg mt-[1rem] sobe-animado">
                         <p class="font-light text-[#fff] text-xs ">Olá, sou um desenvolvedor independente do Brasil!</p>
                     </div>
                     <div class="flex flex-col items-center justify-center mt-[30px] sobe-animado">
@@ -86,7 +87,8 @@
                 <div id="Im-box" class="mt-[30px] flex flex-col items-center sobe-animado">
                     <div class="flex w-full relative">
                         <h2 class="self-start font-bold text-lg">Quem sou eu?</h2>
-                        <div class="absolute w-[123px] h-[4px] bottom-[-2px] rounded-lg left-0 bg-color"></div>
+                        <div class="absolute w-[110px] h-[4px] bottom-[-2px] rounded-lg left-0 bg-color dark:bg-color1">
+                        </div>
                     </div>
                     <div class="mt-[20px] flex flex-col space-y-2  text-sm font-light">
                         <p>Olá, Sou um desenvolvedor web apaixonado por criar experiências digitais interativas e
@@ -99,13 +101,14 @@
                         <p>Busco sempre inovar e entregar produtos de qualidade, combinando design e performance.</p>
                     </div>
                     <button
-                        class=" mt-[30px] bg-color block px-8 py-3 text-sm text-white rounded-lg shadow-lg hover:bg-[#394C57] duration-300 ease">Meu
+                        class=" mt-[30px] bg-color dark:bg-color1 block px-8 py-3 text-sm text-white rounded-lg shadow-lg hover:bg-[#394C57] duration-300 ease">Meu
                         portfólio -></button>
                 </div>
                 <div id="experiencias" class="my-[30px] sobe-animado">
                     <div class="flex w-full relative mb-[1rem]">
                         <h2 class="self-start font-bold text-lg">Bio</h2>
-                        <div class="absolute w-[20px] h-[4px] bottom-[-2px] rounded-lg left-0 bg-color"></div>
+                        <div class="absolute w-[20px] h-[4px] bottom-[-2px] rounded-lg left-0 bg-color dark:bg-color1">
+                        </div>
                     </div>
                     <div class="flex flex-col  space-y-[12px]">
                         <div class="flex gap-[8px]">
@@ -115,7 +118,7 @@
                                 próprios e estudos avançados em desenvolvimento web</p>
                         </div>
                         <div class="flex gap-[8px]">
-                            <p class="font-black">2023</p>
+                            <p class="font-black">2024</p>
                             <p class="text-sm"><span class="font-bold text-base">| Até o presente </span> - Comecei a
                                 atuar como freelancer, desenvolvendo sites para diversos profissionais e empresas,
                                 incluindo portfólios, vitrines e sites institucionais.</p>
@@ -134,17 +137,63 @@
                                 software, redes, hardware e suporte técnico.
                             </p>
                         </div>
-                        <div class="flex gap-[8px]">
+                        <!-- <div class="flex gap-[8px]">
                             <p class="font-black">2025</p>
                             <p class="text-sm"><span class="font-bold text-base">|</span> Comecei a me especializar como
                                 desenvolvedor Full Stack MERN, aprofundando meus conhecimentos em React, Node.js,
                                 MongoDB, Next.js e Express, por meio de cursos avançados e projetos práticos.
                             </p>
+                        </div> -->
+                    </div>
+                </div>
+                <div id="Contact" class="mb-4">
+                    <div class="flex w-full relative mb-[1rem]">
+                        <h2 class="self-start font-bold text-lg">Entre em contato</h2>
+                        <div class="absolute w-[140px] h-[4px] bottom-[-2px] rounded-lg left-0 bg-color dark:bg-color1">
+                        </div>
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <div class="flex items-center">
+                            <div
+                                class="flex items-center space-x-2 hover:bg-color hover:dark:bg-color1 p-2 rounded-lg hover:text-white transition-color duration-500 ease">
+                                <a href="mailto:williamitalianogueira@outlook.com">
+                                    <i class="fa-solid fa-envelope text-2xl"></i>
+                                </a>
+                                <p>williamitalianogueira@outlook.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <div class="flex items-center">
+                            <div
+                                class="flex items-center space-x-2 hover:bg-color hover:dark:bg-color1 p-2 rounded-lg hover:text-white transition-color duration-500 ease">
+                                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                                <a href="https://wa.me/5513996242899" target="_blank">(13)
+                                    99624-2899</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <div class="flex items-center">
+                            <div
+                                class="flex items-center space-x-2 hover:bg-color hover:dark:bg-color1 p-2 rounded-lg hover:text-white transition-color duration-500 ease">
+                                <i class="fa-brands fa-instagram text-2xl"></i>
+                                <a href="https://www.instagram.com/williamita_dev/" target="_blank">@williamita_dev</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <div class="flex items-center">
+                            <div
+                                class="flex items-center space-x-2 hover:bg-color hover:dark:bg-color1 p-2 rounded-lg hover:text-white transition-color duration-500 ease">
+                                <i class="fa-brands fa-github text-2xl"></i>
+                                <a href="https://github.com/William-italia" target="_blank">@william-italia</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
+        </div>
 
         </div>
     </main>
