@@ -23,9 +23,11 @@ boxTheme.addEventListener('click', (e) => {
     if(body.classList.contains('dark')) {
         body.classList.remove('bg-[#F0E7DB]');
         body.classList.add('bg-[#202023]');
+        localStorage.setItem('theme', 'dark'); 
     } else {
         body.classList.remove('bg-[#202023]');
         body.classList.add('bg-[#F0E7DB]');
+        localStorage.setItem('theme', ''); 
     }
 });
 
@@ -35,3 +37,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // box.classList.add('show');
 });
 
+
+function toggleTheme() {
+    const savedTheme = localStorage.getItem('theme');
+
+    if(savedTheme === 'dark') {
+        body.classList.add('dark');
+        body.classList.remove('bg-[#F0E7DB]');
+        body.classList.add('bg-[#202023]');
+    } else {
+        body.classList.remove('bg-[#202023]');
+        body.classList.add('bg-[#F0E7DB]');
+        body.classList.remove('dark');
+    }
+}
+
+
+toggleTheme();
